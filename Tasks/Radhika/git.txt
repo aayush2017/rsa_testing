@@ -1,0 +1,13 @@
+1.  Open Command Prompt --> win + R --> cmd
+2.  cls
+3.  dir
+4.  cd desktop
+5.  git clone url(Paste)
+6.  exit
+7.  git status
+8.  git add .
+9.  git commit -m "Message"
+10. git config --global user.email ""
+11. git config --global user.name ""
+12. git push
+13. Exit
