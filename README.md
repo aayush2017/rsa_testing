@@ -1,2 +1,2 @@
 # rsa_testing
-Daily Data
+Daily Data for git commands demonstration
