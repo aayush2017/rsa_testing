@@ -1,0 +1,146 @@
+/*Header code start*/
+header {
+	background-image: url("../images/bann5.jpg");
+	overflow: hidden;
+	padding-bottom: 5%;
+	@extend %bgimg-nr-cover;
+}
+/*chucdsc*/
+#menu-strip {
+	overflow: hidden;
+	@extend %mltr;
+	margin-bottom: 10%;
+}
+#logo {
+	float: left;
+	width: 15%;
+	background-color: $bg-red;
+	color: $color-white;
+	text-align: center;
+	@include givePadding(2%);
+	font-family: "Roboto";
+}
+#lrnav {
+	float: right;
+	width: 60%;
+	overflow: hidden;
+}
+#contact {
+	overflow: hidden;
+	width: 65%;
+	float: right;
+	clear: both;
+	margin-bottom: 5%;
+	margin-top: 2%;
+}
+#contact-box {
+	float: left;
+	overflow: hidden;
+	width: 30%;
+}
+#contact-icon {
+	float: left;
+	width: 15%;
+}
+#contact-number {
+	float: left;
+	width: 75%;
+	margin-left: 5%;
+	border-right: 3px solid $black;
+}
+#login-reg {
+	float: left;
+	width: 30%;
+}
+.btn-blue {
+	background-color: $bg-sky;
+	padding: 5% 15% 5% 15%;
+	text-align: center;
+	border: none;
+	color: $color-white;
+	text-transform: uppercase;
+}
+#contact-icon i {
+	font-size: 2em;
+}
+#contact-number p {
+	color: $color-white;
+}
+nav {
+	width: 100%;
+	clear: both;
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $color-white;
+		margin-right: 5%;
+	}
+}
+#del-box {
+	width: 40%;
+	float: left;
+	margin-left: 9%;
+}
+#del-box-text {
+	h1 {
+		color: $color-white;
+		font-size: 5em;
+		text-transform: uppercase;
+		font-family: $fontRobotoBlack;
+	}
+	p {
+		color: $color-white;
+		word-spacing: 10px;
+		font-size: 1.2em;
+	}
+}
+#del-box-icons {
+	overflow: hidden;
+	width: 100%;
+	height: 48px;
+	margin-top: 5%;
+}
+.dbi-box {
+	width: 15px;
+	height: 15px;
+	background-color: $bg-sky;
+	display: block;
+	border: 2px solid $color-white;
+	float: left;
+	margin-right: 5%;
+	.active {
+		background-color: $bg-red;
+	}
+}
+#header-form {
+	width: 25%;
+	float: right;
+	margin-right: 11%;
+}
+.hfinput {
+	width: 100%;
+	@include givePadding(3%);
+	margin-bottom: 2%;
+	background-color: rgba(0,0,0,.3);
+	border: transparent;
+}
+.hfinput::placeholder {
+	color: $color-white;
+}
+.hfselect {
+	width: 100%;
+	@include givePadding(3%);
+	background-color: rgba(0,0,0,.3);
+	border: transparent;
+	margin-bottom: 2%;
+	color: $color-white;
+}
+.hfbtn-red {
+	background-color: $bg-red;
+	color: $color-white;
+	width: 100%;
+	@include givePadding(3%);
+	text-transform: uppercase;
+	border: transparent;
+}
+/*Header Code Stop*/

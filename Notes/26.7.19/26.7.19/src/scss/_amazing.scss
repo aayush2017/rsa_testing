@@ -1,0 +1,38 @@
+
+/*amazing feature Start*/
+#amazing-box {
+	@extend %overflow;
+	@include givePaddingTB(5%,5%);
+	#amazing-box-head {
+		text-align: center;
+		@extend %text-upper;
+		@include givePaddingTB(0,5%);
+	}
+	.amazing-box-box {
+		@extend %mltr;
+		@extend %clr-fix;
+		@extend %overflow;
+		.amazing-box-img:first-child {
+			@extend %float-left;
+			margin-right: 2%;
+		}
+		@include giveMarginTB(2%,0);
+		.amazing-box-text {
+			@extend %float-left;
+			width: 55%;
+			h2 {
+				color: $text-red;
+				@include giveMarginTB(0, 5%);
+				@extend %text-upper;
+			}
+		}
+		.amazing-box-img {
+			@extend %float-right;
+			width: 40%;
+			img {
+				@extend %img-responsive;
+			}
+		}
+	}
+}
+/*amazing feature End*/

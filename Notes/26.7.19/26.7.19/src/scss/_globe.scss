@@ -1,0 +1,38 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+$bg-red: #ff304d;
+$text-red: #ff304d;
+$bg-sky: #01bcfa;
+$color-white: #fff;
+$fontRobotoBlack: "Rob";
+$black:  #000;
+
+%bgimg-nr-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+%mltr { margin-left: 5%; margin-right: 5%; }
+
+@mixin givePadding($value) {
+  padding: $value;
+}
+@mixin givePaddingTB($valueA, $valueB) {
+  padding-top: $valueA;
+  padding-bottom: $valueB;
+}
+@mixin giveMarginTB($valueA, $valueB) {
+  margin-top: $valueA;
+  margin-bottom: $valueB;
+}
+
+@font-face {
+	font-family: "Rob";
+	src: url("../webfonts/Roboto-Black.ttf");
+}
+%text-upper { text-transform: uppercase; }
+%float-left { float: left; }
+%float-right { float: right; }
+%clr-fix { clear: both; }
+%overflow { overflow: hidden; }
+%img-responsive { width: 100%; margin-bottom: -4px; }
