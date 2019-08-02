@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>After Effect</title>
+<style>
+
+
+h2 {
+	position: relative;
+	width: 10%;
+}
+h2::before {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	width: 0%;
+	height: 4px;
+	background: green;
+	transition: all .3s;
+	right: 50%;
+}
+h2::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 0%;
+	height: 4px;
+	background: green;
+	transition: all .3s;
+	left: 50%;
+}
+h2:hover::after {
+	width: 50%;
+}
+h2:hover::before {
+	width: 50%;
+}
+
+
+</style>
+</head>
+<body>
+<h2>Hello World</h2>
+</body>
+</html>
