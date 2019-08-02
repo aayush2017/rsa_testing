@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+<style>
+div {
+	width: 10%;
+	height: 50px;
+	background-color: red;
+	/*animation: changeBg 10s infinite;*/
+	animation-name: changeBg;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-fill-mode: backwards;
+}
+div:hover {
+	animation-play-state: paused;
+}
+@keyframes changeBg {
+	from { background-color: red; }
+	to { background-color: green; }
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

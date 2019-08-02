@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition</title>
+<style>
+div {
+	height: 50px;
+	width: 10%;
+	background-color: red;
+	transition: width 3s;
+
+	transition-property: width;
+	transition-duration: 3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 2s;
+	cursor: wait;
+}
+div:hover {
+	background-color: green;
+	width: 100%;
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
