@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg1 { 
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image-source: url(border.png);
+    border-image-repeat: repeat;
+    border-image-slice: 30;
+}
+
+#borderimg2 { 
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image-source: url(border.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+}
+
+#borderimg3 { 
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image-source: url(border.png);
+    border-image-repeat: stretch;    
+    border-image-slice: 30;
+}
+</style>
+</head>
+<body>
+
+<h1>The border-image-repeat Property</h1>
+<p>The border-image-repeat property specifies whether the border image should be repeated, rounded or stretched:</p>
+
+<h2>border-image-repeat: repeat:</h2>
+<p id="borderimg1">Here, the image tiles to fill the area. Tiles are divided if necessary.</p>
+
+<h2>border-image-repeat: round:</h2>
+<p id="borderimg2">Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.</p>
+
+<h2>border-image-repeat: stretch (default):</h2>
+<p id="borderimg3">Here, the image is stretched to fill the area.</p>
+
+<p>Here is the original image:</p><img src="border.png">
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image-repeat property.</p>
+
+</body>
+</html>

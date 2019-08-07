@@ -1,0 +1,221 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+@import "https://fonts.googleapis.com/css?family=Lato";
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(#444 -50%, #000 150%);
+  font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  border: none;
+  float: left;
+  width: calc(100% + 30px);
+  height: 1px;
+  background-color: #e6e6e6;
+  margin: 15px 0 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0 0;
+  padding: 10px 15px;
+}
+
+h1 {
+  font-size: 36px;
+  padding: 0;
+  float: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+header {
+  float: left;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 15px;
+  background-color: black;
+}
+header .logo {
+  float: left;
+  font: 0/0 a;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/448277/codepen-logo-9c0933e8569e634b75ac2eb808da908d.svg) no-repeat 18px 21px;
+  background-size: 138px 24px;
+  background-color: black;
+  width: 180px;
+  height: 65px;
+  border: 0;
+  outline: 0;
+  position: relative;
+  z-index: 99999;
+}
+header .author {
+  float: right;
+  color: white;
+  line-height: 66px;
+  margin: 0 15px 0 0;
+  font-size: 95%;
+}
+header .author a {
+  color: #bfbfbf;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+header .author a:hover {
+  color: white;
+}
+
+section {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  float: left;
+  min-height: 100%;
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 0 15px 30px;
+  background-color: white;
+}
+section h3 {
+  background-color: #000;
+  color: white;
+  float: left;
+  clear: both;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+section h3:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -4px;
+  top: 4px;
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0.5;
+}
+section h3.varient-1 {
+  background-color: #d34eb4;
+}
+section h3.varient-1:after {
+  background-color: #be309d;
+}
+section h3.varient-2 {
+  background-color: #be3081;
+}
+section h3.varient-2:after {
+  background-color: #962566;
+}
+section h3.varient-3 {
+  background-color: #ad6397;
+}
+section h3.varient-3:after {
+  background-color: #914c7c;
+}
+section h3.varient-4 {
+  background-color: #7e5f79;
+}
+section h3.varient-4:after {
+  background-color: #61495d;
+}
+section h3 + div {
+  width: 100%;
+  height: 250px;
+  float: left;
+  margin: 0 0 15px;
+  background-color: #e6e6e6;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section h3 + div span {
+  font-size: 5vw;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  section h3 + div span {
+    font-size: 36px;
+  }
+}
+section h3 + div span:before, section h3 + div span:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+}
+section h3 + div span.hover-1:after {
+  left: 0;
+  background-color: #d34eb4;
+}
+section h3 + div span.hover-2:after {
+  right: 0;
+  background-color: #be3081;
+}
+section h3 + div span.hover-3:before {
+  left: calc(50%);
+  background-color: #ad6397;
+}
+section h3 + div span.hover-3:after {
+  right: calc(50%);
+  background-color: #ad6397;
+}
+section h3 + div span.hover-4:before {
+  left: 0;
+  background-color: #7e5f79;
+}
+section h3 + div span.hover-4:after {
+  right: 0;
+  background-color: #7e5f79;
+}
+section h3 + div:hover {
+  cursor: pointer;
+}
+section h3 + div:hover span:before, section h3 + div:hover span:after {
+  width: 100%;
+  opacity: 1;
+}
+section h3 + div:hover span.hover-3:before, section h3 + div:hover span.hover-3:after, section h3 + div:hover span.hover-4:before, section h3 + div:hover span.hover-4:after {
+  width: 50%;
+}

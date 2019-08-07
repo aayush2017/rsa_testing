@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prog</title>
+<style>
+h3.agileits-title {
+	color: #000;
+	font-size: 5em;
+	margin-bottom: .5em;
+	display: inline-block;
+}
+h3.agileits-title::before {
+	content: '';
+	width: 40%;
+	height: 13px;
+	background: rgb(224, 224, 224);
+	display: block;
+	border-top: 8px double #ffffff;
+}
+.bar_group__bar.thin {
+	width: 0%;
+	height: 6px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #F44336;
+	margin-bottom: 1em;
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	transition: width 1s;
+}
+.bar_group__bar.thin::before, .bar_group__bar.thick::before {
+	display: block;
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 6px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	background: #E4E4E4;
+}
+</style>
+</head>
+<body>
+<h3 class="agileits-title">About us</h3>
+<div class="bar_group__bar thin" label="Lorem ipsum &nbsp;&nbsp; 80%" value="200" style="width: 80%;"></div>
+</body>
+</html>
