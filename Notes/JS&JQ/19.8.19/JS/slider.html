@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+</style>
+</head>
+<body>
+<div class="box">
+	<div class="box-img">
+		<img src="img/14.jpg" alt="14.jpg" >		
+	</div>
+	<div class="box-img">
+		<img src="img/15.jpg" alt="15.jpg" >		
+	</div>
+	<div class="box-img">
+		<img src="img/16.jpg" alt="16.jpg" >		
+	</div>
+	<div class="box-img">
+		<img src="img/13.jpg" alt="13.jpg" >		
+	</div>
+</div>
+<button onclick="showImage(gv=gv-1)">Prev</button>
+<button onclick="showImage(0)">1</button>
+<button onclick="showImage(1)">2</button>
+<button onclick="showImage(2)">3</button>
+<button onclick="showImage(3)">4</button>
+<button onclick="showImage(gv=gv+1)">Next</button>
+
+<script>
+var gv;
+gv = 0;
+showImage(gv);
+function showImage(num) {
+	var bi = document.getElementsByClassName('box-img');
+	if (num >=bi.length) {
+		gv = 0; 
+		num = 0;
+	}
+	if (num < 0) {
+		gv = bi.length - 1; 
+		num = bi.length - 1;
+	}
+	for(i=0; i<bi.length; i++) {
+		bi[i].style.display = "none";
+	}
+	bi[num].style.display = "block";
+}
+ setInterval(function(){ showImage(gv++); }, 1000);
+</script>
+</body>
+</html>

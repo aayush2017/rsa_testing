@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+</head>
+<body>
+<label>Age <input type="text" name="" id="age"></label>
+<button id="btn1">Check</button>
+<script src="jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function() {
+			if($("#age").val() >= 18) {
+				alert("You are Eligible for the Vote !");
+			}
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function</title>
+</head>
+<body>
+<p id="p1"></p>
+<script>
+// abc();
+// xyz(10);
+// xyz(2);
+// xyz(20);
+var p = document.getElementById('p1');
+p.innerHTML = zxy(5);
+	function abc() {
+		var p = document.getElementById('p1');
+		for(i=1; i<=5; i++) {
+			// p.innerHTML += i * 2 + "<br/>";
+			for(j=1; j<=i; j++) {
+				p.innerHTML += "* ";
+			}
+			p.innerHTML += "<br/>";
+		}
+	}
+	function xyz(num) {
+		var p = document.getElementById('p1');
+		for(i=1; i<=num; i++) {
+			// p.innerHTML += i * 2 + "<br/>";
+			for(j=1; j<=i; j++) {
+				p.innerHTML += "* ";
+			}
+			p.innerHTML += "<br/>";
+		}
+	}
+	function zxy(num) {
+		// var p = document.getElementById('p1');
+		var a;
+		a = "";
+		for(i=1; i<=num; i++) {
+			// p.innerHTML += i * 2 + "<br/>";
+			for(j=1; j<=i; j++) {
+				a += "* ";
+			}
+			a += "<br/>";
+		}
+		return a;
+	}
+	function yxz() {
+		// var p = document.getElementById('p1');
+		var a;
+		a = "";
+		for(i=1; i<=5; i++) {
+			// p.innerHTML += i * 2 + "<br/>";
+			for(j=1; j<=i; j++) {
+				a += "* ";
+			}
+			a += "<br/>";
+		}
+		return a;
+	}
+</script>
+</body>
+</html>

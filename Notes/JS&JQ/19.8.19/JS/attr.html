@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>attr</title>
+</style>
+</head>
+<body>
+<img src="img/14.jpg" alt="14.jpg" id="img1">
+<button onclick="abc()">Ok</button>
+<script>
+function abc() {
+	var i = document.getElementById('img1');
+	
+	if (i.src.match("img/14.jpg")) {
+		i.src = "img/15.jpg";	
+	} else {
+		i.src = "img/14.jpg";
+	}
+
+}
+
+</script>
+</body>
+</html>
