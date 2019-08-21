@@ -1,0 +1,160 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+/*animation element sliding left*/
+
+.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/*bounce up animation for the subject*/
+.bounce-up {
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 200px, 0px);
+  -webkit-transform: translate3d(0px, 200px, 0px);
+  -o-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate3d(0px, 200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bounce-up.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*Mul*/
+/*left fancy animastion*/
+
+@-moz-keyframes left_animation {
+  0% {
+    opacity: 0;
+    -moz-transform: rotate(180deg) translate3d(100%, 100%, 0);
+  }
+  75% {
+    opacity: 0.8;
+    -moz-transform: rotate(-40deg);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: rotate(0deg) translate3d(0%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes left_animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(180deg) translate3d(100%, 100%, 0);
+  }
+  75% {
+    opacity: 0.8;
+    -webkit-transform: rotate(-40deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg) translate3d(0%, 0%, 0);
+  }
+}
+
+@keyframes left_animation {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg) translate3d(100%, 100%, 0);
+  }
+  75% {
+    opacity: 0.8;
+    transform: rotate(-40deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translate3d(0%, 0%, 0);
+  }
+}
+/*right fancy animation*/
+
+@-moz-keyframes right_animation {
+  0% {
+    opacity: 0;
+    -moz-transform: rotate(180deg) translate3d(-100%, -100%, 0);
+  }
+  75% {
+    opacity: 0.8;
+    -moz-transform: rotate(40deg);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: rotate(0deg) translate3d(0%, 0%, 0);
+  }
+}
+
+@-webkit-keyframes right_animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(180deg) translate3d(-100%, 100%, 0);
+  }
+  75% {
+    opacity: 0.8;
+    -webkit-transform: rotate(40deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg) translate3d(0%, 0%, 0);
+  }
+}
+
+@keyframes right_animation {
+  0% {
+    opacity: 0;
+    transform: rotate(180deg) translate3d(-100%, -100%, 0);
+  }
+  75% {
+    opacity: 0.8;
+    transform: rotate(40deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translate3d(0%, 0%, 0);
+  }
+}
+.multi-step-left.in-view {
+  -moz-animation: left_animation 1300ms ease-in both;
+  -webkit-animation: left_animation 1300ms ease-in both;
+  animation: left_animation 1300ms ease-in both;
+}
+
+.multi-step-right.in-view {
+  -moz-animation: right_animation 1300ms linear both;
+  -webkit-animation: right_animation 1300ms linear both;
+  animation: right_animation 1300ms linear both;
+}

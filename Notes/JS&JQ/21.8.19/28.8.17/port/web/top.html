@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Top</title>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<style>
+@keyframes scroll-ani-to-top {
+  0% {
+    opacity: 0;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 50%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 75%;
+  }
+}
+#scrollUp {
+	background: #ffbb00 none repeat scroll 0 0;
+	bottom: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	color: #fff;
+	font-size: 28px;
+	height: 45px;
+	line-height: 40px;
+	position: fixed;
+	right: 15px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	width: 45px;
+	z-index: 200;
+}
+#scrollUp:hover {
+	background: #fff;
+}
+#scrollUp:hover i {
+	animation: 800ms linear 0s normal none infinite running scroll-ani-to-top;
+	height: 100%;
+	left: 0;
+	margin-bottom: -25px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+#scrollUp:hover i {
+	color: #111;
+}
+</style>
+</head>
+<body>
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up"></i></a>
+</body>
+</html>

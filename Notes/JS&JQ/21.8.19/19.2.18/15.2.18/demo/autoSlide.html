@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.box-img {
+	width: 16%;
+	float: left;
+	position: relative;
+	left: 0%;
+}
+.box-img img { width: 100%; }
+.box {overflow: hidden;}
+.box-content {width: 209%; position: relative; left: 0%; transition: all 3s;}
+</style>
+</head>
+<body>
+<div class="box">
+	<div class="box-content">
+		<div class="box-img">
+			<img src="img/1.jpg" alt="1.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/2.jpg" alt="2.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/4.jpg" alt="4.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/5.jpg" alt="5.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/6.jpg" alt="6.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/6.jpg" alt="6.jpg" />
+		</div>
+	</div>
+</div>
+<button onclick="imgNum = abc(imgNum -1);">Prev</button>
+<button onclick="imgNum = abc(imgNum +1);">Next</button>
+<script>
+
+var imgNum = 0;
+ var ss = setInterval(function(){
+ 	imgNum += 1;
+ 	imgNum = abc(imgNum++);
+ }, 3000);
+
+ function abc(imgNum) {
+ 	var box_content = document.getElementsByClassName("box-content");
+ 	var box_img = document.getElementsByClassName("box-img");
+ 	// alert(imgNum);
+ 	if (imgNum <= box_img.length - 3) {
+	 	box_content[0].style = "left: -" + 33*imgNum + "%";
+	 	// imgNum +=1;
+ 	} 
+ 	else {
+ 		box_content[0].style = "left: 0%";
+	 	imgNum = 0;
+ 	}
+ 	return imgNum;
+ }
+</script>
+</body>
+</html>

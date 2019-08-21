@@ -1,0 +1,8 @@
+Tab
+----
+http://freefrontend.com/css-tabs/
+https://tympanus.net/codrops/2014/09/02/tab-styles-inspiration/
+https://tympanus.net/codrops/2012/04/12/animated-content-tabs-with-css3/
+https://www.cssscript.com/pure-css3-tab-effects/
+https://dcrazed.com/html5-css3-accordion-tabs/
+--------------------------------

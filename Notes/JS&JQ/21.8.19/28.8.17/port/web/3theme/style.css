@@ -1,0 +1,197 @@
+@charset "utf-8";
+/*
+Theme Name: Thefe
+Theme URI: http://3theme.com/tf003/
+Description: Thefe - Portfolio WordPress Theme
+Version: 1.0.0
+Author: foreverpinetree@gmail.com
+Author URI: http://foreverpinetree.com/
+Text Domain: thefe
+Tags: custom-menu, featured-images, translation-ready
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+
+
+body,textarea,input,button,select{
+	font-family:'Montserrat-Local',Arial;
+	font-weight: 500;
+	user-select:none;
+}
+
+html,body, p, input, h1, h2, h3, h4, h5, h6, ul, ol,li, dl, dt, dd, form,figure,svg{margin: 0; padding: 0;}
+body,li,a,div,nav,header,footer,section,span,p,article,ol,ul,figure,form,input,textarea,em,.h,i,img,:after,:before{box-sizing: border-box;}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration{ display: none; }
+input,button,select,textarea{-webkit-appearance: none;}
+textarea,input,a,div,img,button,select,i,li{outline:none;}
+a{-webkit-tap-highlight-color:rgba(19,20,21,0);text-decoration: none;}
+
+
+a.full{
+	position: absolute;width: 100%;height: 100%;top: 0;left: 0;background:rgba(0,0,0,.0);opacity: 0; z-index: 99;
+}
+.bg-full{
+	position: absolute;left: 0;bottom: 0;right: 0;top: 0;
+	background-position: 50% 50%;background-repeat:no-repeat;background-size: cover;
+	z-index: 1;
+}
+
+.demo-item{
+	position: fixed;
+	width: 50%;height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	text-align: center;
+	top: 0;
+}
+
+.wrap{
+	width: 100%;
+	padding: 0 20%;
+}
+.demo-item.light{
+	right: 0;
+	background: #fff;
+	color: #111;
+	z-index: 2;
+}
+.demo-item.dark{
+	left: 0;
+	background: #111;
+	color: #fff;
+}
+.elem{
+	position: absolute;height: 100%;
+	left: 0;top: 0;
+	pointer-events: none;
+	transform: translateX(10px);
+}
+.elem img{
+	height: 100%;width: auto;
+	position: absolute;
+	left: 0;top: 0;
+	transform: translateX(-50%);
+	opacity: 1;
+}
+.demo-item:hover .elem{
+	transform: translateX(-10px);
+}
+
+
+.demo-item .img{
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+}
+.demo-item .img:after{
+	content: '';
+	position: absolute;
+	width: 100%;height: 100%;left: 0;top: 0;
+	background: rgba(88,88,88,.1);
+	opacity: 0;
+}
+.demo-item:hover .img:after{
+	opacity: 1;
+	left: 10px;top: 10px;
+}
+
+.img img{
+	position: relative;
+	top: 0;left: 0;
+	max-width: 100%;
+	width: 480px;
+	opacity: 0.4;
+	z-index: 2;
+}
+.demo-item:hover .img img{
+	top: -10px;left: -10px;
+	opacity: 1;
+}
+
+.demo-item .text{
+	position: relative;
+	margin-top: 60px;
+	z-index: 2;
+}
+.demo-item p{
+	position: relative;
+	top: 0;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	padding-left: 4px;
+}
+.demo-item a{
+	position: relative;
+	display: inline-block;
+	line-height: 60px;
+	padding: 0 80px;
+	margin-top: 20px;
+	background: rgba(166,166,166,.1);
+	color: #999;
+	font-size: 10px;
+	letter-spacing: 4px;
+}
+.demo-item a:after{
+	content: '';
+	position: relative;
+	left: 0;
+	display: inline-block;vertical-align: top;
+	width: 0;height: 60px;
+	background-image: url(images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}
+.demo-item a:hover:after{
+	width: 16px;left: 10px;
+}
+
+.demo-item:hover a{
+	color: #fff;
+	background: #4bdac4;
+}
+.demo-item a,.demo-item p,.demo-item img,.img:after,.demo-item a:after{
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+}
+.elem{
+	transition: all 2s;
+	-webkit-transition: all 2s;
+}
+@media screen and (max-width: 1360px){
+	.demo-item p{
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 1023px){
+	.demo-item{
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 20% 0;
+	}
+	.elem{
+		display: none;
+	}
+	.demo-item a{
+		line-height: 48px;
+		padding: 0 40px;
+	}
+	.demo-item a:after{
+		height: 48px;
+	}
+	.demo-item .text{
+		margin-top: 20px;
+	}
+
+}
+

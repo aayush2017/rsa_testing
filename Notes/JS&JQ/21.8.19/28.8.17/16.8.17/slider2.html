@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+<style>
+#slider {
+	width: 400px;
+	height: 230px;
+	background-color: red;
+	background-image: url("130/img/Aston-Martin.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation-name: changeImage;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	cursor: pointer;
+}
+#slider:hover {
+	animation-play-state: paused;
+}
+@keyframes changeImage {
+	0% {
+		background-image: url("130/img/Aston-Martin.jpg");
+	}
+	25% {
+		background-image: url("130/img/ferrari_supercar_sports_car_red_mountains_101239_1920x1080.jpg");
+	}
+	50% {
+		background-image: url("130/img/lamborghini_veneno_supercar_rear_view_nature_95601_1920x1080.jpg");
+	}
+	75% {
+		background-image: url("130/img/Supercar-wallpapers.jpg");
+	}
+	100% {
+		background-image: url("130/img/107573.jpg");
+	}
+}
+</style>
+</head>
+<body>
+<div id="slider">
+	
+</div>
+</body>
+</html>

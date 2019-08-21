@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab</title>
+<style>
+
+#tab {
+
+  border: 1px solid red;
+  width: 50%;
+}
+#tab label {
+
+  background: red;
+  padding: 1%;
+  margin: 1% 0 1% 0;
+  display: inline-block;
+  cursor: pointer;
+}
+#tab input[type="radio"] {
+
+  display: none;
+}
+#t1c {display: none;}
+#t2c {display: none;}
+#t3c {display: none;}
+
+#t1:checked ~ #t1c {
+	display: block;
+}
+#t2:checked ~ #t2c {
+	display: block;
+}
+#t3:checked ~ #t3c {
+	display: block;
+}
+</style>
+</head>
+<body>
+<div id="tab">
+	<label for="t1">Tab1</label>
+	<label for="t2">Tab1</label>
+	<label for="t3">Tab3</label>
+
+	<input type="radio" id="t1" name="t" checked="">
+	<div id="t1c">
+		<img src="img/1.jpg" width="100%">
+	</div>
+
+	<input type="radio" id="t2" name="t">
+	<div id="t2c">
+		<img src="img/2.jpg" width="100%">
+	</div>
+
+	<input type="radio" id="t3" name="t">
+	<div id="t3c">
+		<img src="img/3.jpg" width="100%">
+	</div>
+</div>
+</body>
+</html>

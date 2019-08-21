@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Step</title>
+<style>
+@keyframes color {
+	0%, 50% {
+		background-color: blue;
+	}
+	25% {
+		background-color: green;
+	}
+	50% {
+		background-color: yellow;
+	}
+}
+@keyframes size {
+	0%, 50% {
+		font-size: 10%;
+	}
+	25% {
+		font-size: 25%;
+	}
+	50% {
+		font-size: 50%;
+	}
+}
+
+div {
+	padding: 5%;
+	background-color: red;
+	animation: color 5s, size 5s;
+	font-size: 25px;
+}
+</style>
+</head>
+<body>
+<div>BOX</div>
+</body>
+</html>

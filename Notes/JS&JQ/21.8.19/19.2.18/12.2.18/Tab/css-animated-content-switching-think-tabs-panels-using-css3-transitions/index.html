@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animated Content switching (think tabs/panels), using CSS3 Transitions</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- For a full explanation of this code, please refer to the blogpost at http://www.bram.us/2014/01/05/css-animated-content-switching/ -->
+
+<h1>CSS Animated Content Switching <em>(think tabs/panels)</em>, using CSS3 Transitions</h1>
+
+<p>For a full explanation of this code, please refer to the blogpost at <a href="http://www.bram.us/2014/01/05/css-animated-content-switching/">http://www.bram.us/2014/01/05/css-animated-content-switching/</a></p>
+
+<h2>1. Horizontal slide (enter and exit animations running sequential)</h2>
+<ul class="panelNav" data-panelwrapper="panelWrapper1">
+  <li><a href="#panelA1">A</a></li>
+  <li><a href="#panelB1">B</a></li>
+  <li><a href="#panelC1">C</a></li>
+</ul>
+<div class="panelWrapper" id="panelWrapper1" data-enter="slideright" data-exit="slideleft" data-sequential="yes">
+  <div class="panel current" id="panelA1">A</div>
+  <div class="panel" id="panelB1">B</div>
+  <div class="panel" id="panelC1">C</div>
+</div>
+
+
+<h2>2. Horizontal slide (enter and exit animations running concurrently)</h2>
+<ul class="panelNav" data-panelwrapper="panelWrapper5">
+  <li><a href="#panelA5">A</a></li>
+  <li><a href="#panelB5">B</a></li>
+  <li><a href="#panelC5">C</a></li>
+</ul>
+<div class="panelWrapper" id="panelWrapper5" data-enter="slideright" data-exit="slideright">
+  <div class="panel current" id="panelA5">A</div>
+  <div class="panel" id="panelB5">B</div>
+  <div class="panel" id="panelC5">C</div>
+</div>
+
+<h2>3. Vertical Slide (enter and exit animations running sequential), with fade</h2>
+<ul class="panelNav" data-panelwrapper="panelWrapper2">
+  <li><a href="#panelA2">A</a></li>
+  <li><a href="#panelB2">B</a></li>
+  <li><a href="#panelC2">C</a></li>
+</ul>
+<div class="panelWrapper" id="panelWrapper2" data-enter="slideup fade" data-exit="slidedown fade" data-sequential="yes">
+  <div class="panel current" id="panelA2">A</div>
+  <div class="panel" id="panelB2">B</div>
+  <div class="panel" id="panelC2">C</div>
+</div>
+
+
+<h2>4. Scaledown and up (enter and exit animations running concurrently)</h2>
+<ul class="panelNav" data-panelwrapper="panelWrapper3">
+  <li><a href="#panelA3">A</a></li>
+  <li><a href="#panelB3">B</a></li>
+  <li><a href="#panelC3">C</a></li>
+</ul>
+<div class="panelWrapper" id="panelWrapper3" data-enter="scaleup" data-exit="scaledown">
+  <div class="panel current" id="panelA3">A</div>
+  <div class="panel" id="panelB3">B</div>
+  <div class="panel" id="panelC3">C</div>
+</div>
+
+<h2>5. Scaledown and up (enter and exit animations running sequential)</h2>
+<ul class="panelNav" data-panelwrapper="panelWrapper4">
+  <li><a href="#panelA4">A</a></li>
+  <li><a href="#panelB4">B</a></li>
+  <li><a href="#panelC4">C</a></li>
+</ul>
+<div class="panelWrapper" id="panelWrapper4" data-enter="scaleup" data-exit="scaledown" data-sequential="yes">
+  <div class="panel current" id="panelA4">A</div>
+  <div class="panel" id="panelB4">B</div>
+  <div class="panel" id="panelC4">C</div>
+</div>
+
+
+
+<h2>6. Scaledown and up (enter and exit animations running sequential), with fade</h2>
+<ul class="panelNav" data-panelwrapper="panelWrapper6">
+  <li><a href="#panelA6">A</a></li>
+  <li><a href="#panelB6">B</a></li>
+  <li><a href="#panelC6">C</a></li>
+</ul>
+<div class="panelWrapper" id="panelWrapper6" data-enter="scaleup fade" data-exit="scaledown fade" data-sequential="yes">
+  <div class="panel current" id="panelA6">A</div>
+  <div class="panel" id="panelB6">B</div>
+  <div class="panel" id="panelC6">C</div>
+</div>
+
+
+
+<h2>7. Per panel different animations</h2>
+<ul class="panelNav" data-panelwrapper="panelWrapper7">
+  <li><a href="#panelA7">A</a></li>
+  <li><a href="#panelB7">B</a></li>
+  <li><a href="#panelC7">C</a></li>
+</ul>
+<div class="panelWrapper" id="panelWrapper7" data-enter="slideleft" data-exit="scaledown fade" data-sequential="yes">
+  <div class="panel current" id="panelA7" data-enter="slideright">A</div>
+  <div class="panel" id="panelB7" data-exit="scaleup">B</div>
+  <div class="panel" id="panelC7" data-enter="slideup" data-exit="slidedown">C</div>
+</div>
+
+<h2>8. Any combo you like &hellip; :-)</h2>
+
+
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

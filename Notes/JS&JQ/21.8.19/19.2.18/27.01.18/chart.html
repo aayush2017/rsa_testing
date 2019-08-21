@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+#chart {
+	width: 650px;
+	height: 300px;
+	margin: 30px auto 0;
+	display: block;
+}
+#chart #numbers {
+	height: 100%;
+	width: 50px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	float: left;
+}
+ul, label {
+	margin: 0;
+	padding: 0;
+}
+#chart #bars {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}	
+#chart #numbers li {
+	text-align: right;
+	padding-right: 1em;
+	list-style: none;
+	height: 29px;
+	position: relative;
+	bottom: 30px;
+}
+p, ul li, ol li {
+	margin: 0;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+#chart #bars li {
+	width: 80px;
+	height: 300px;
+	margin: 0;
+}
+#chart #bars li {
+	display: table-cell;
+	width: 80px;
+	height: 300px;
+	margin: 0;
+	text-align: center;
+	position: relative;
+}
+#chart #bars li .bar {
+	display: block;
+	width: 70px;
+	margin-left: 15px;
+	background: #101010;
+	position: absolute;
+	bottom: 0;
+}
+#chart #bars li .bar:hover {
+	background: #2962ff;
+	cursor: pointer;
+}
+#chart #bars li span {
+	font-weight: 600;
+	color: #262c38;
+	width: 100%;
+	position: absolute;
+	bottom: -2em;
+	left: 9px;
+	text-align: center;
+	font-size: 0.9em;
+}
+#chart #bars li .bar:hover::before {
+	font-weight: 600;
+	color: #262c38;
+	content: attr(data-percentage) '%';
+	position: relative;
+	bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+</style>
+</head>
+<body>
+<div id="chart">
+	<ul id="numbers">
+		<li><span>100%</span></li>
+		<li><span>90%</span></li>
+		<li><span>80%</span></li>
+		<li><span>70%</span></li>
+		<li><span>60%</span></li>
+		<li><span>50%</span></li>
+		<li><span>40%</span></li>
+		<li><span>30%</span></li>
+		<li><span>20%</span></li>
+		<li><span>10%</span></li>
+		<li><span>0%</span></li>
+	</ul>
+	<ul id="bars">
+		<li><div data-percentage="56" class="bar" style="height: 56%;"></div><span>Option 1</span></li>
+		<li><div data-percentage="33" class="bar" style="height: 33%;"></div><span>Option 2</span></li>
+		<li><div data-percentage="54" class="bar" style="height: 54%;"></div><span>Option 3</span></li>
+		<li><div data-percentage="94" class="bar" style="height: 94%;"></div><span>Option 4</span></li>
+		<li><div data-percentage="44" class="bar" style="height: 44%;"></div><span>Option 5</span></li>
+		<li><div data-percentage="23" class="bar" style="height: 23%;"></div><span>Option 6</span></li>
+	</ul>
+</div>
+</body>
+</html>

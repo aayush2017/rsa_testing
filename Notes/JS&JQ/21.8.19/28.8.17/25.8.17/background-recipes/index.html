@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Background Recipes</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <h1>CSS Background Recipes</h1>
+<p id="debug" class="debug">(choose one)</p>
+
+<ul class="options__first">
+  <li class="option__flat">
+    Flat Color
+    <ul class="options__second hidden">
+      <li data-type="hex">Hex Code</li>
+      <li class="option__name" data-type="name">Color Name</li>
+      <li class="option__opacity" data-type="opacity">Opacity</li>
+    </ul>
+  </li>
+  <li class="option__image">
+    Image
+    <ul class="options__second hidden">
+      <li class="option__image option__positioned" data-type="positioned">Positioned</li>
+      <li class="option__sprite" data-type="sprite">Sprite</li>
+      <li class="option__image image__repeating" data-type="repeating">Repeating</li>
+      <li class="option__image option__multiple" data-type="multiple">Multiple</li>
+      <li class="image__opacity" data-type="image_opacity">Opacity</li>
+    </ul>
+  </li>
+  <li class="option__gradient">
+    Gradient
+    <ul class="options__second hidden">
+      <li class="option__gradient" data-type="linear">Linear</li>
+      <li class="option__radial" data-type="radial">Radial</li>
+      <li class="option__striped" data-type="striped">Striped</li>
+      <li class="option__repeating" data-type="repeating">Repeating</li>
+    </ul>
+  </li>
+</ul>
+
+<pre class="hide"><code id="code">
+  some-code: here;
+</code></pre>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+<style>
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+#c1:checked ~ #content1,
+#c2:checked ~ #content2,
+#c3:checked ~ #content3,
+#c4:checked ~ #content4 {
+  display: block;
+}
+#c1,
+#c2,
+#c3,
+#c4 {
+  display: none;
+
+}
+#content1,
+#content2,
+#content3,
+#content4 {
+  display: none;
+  border-top: 1px solid #ddd;
+  
+}
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+<input type="radio" id="c1" name="tab" checked="">
+<label for="c1">Home</label>
+<input type="radio" id="c2" name="tab">
+<label for="c2">About</label>
+<input type="radio" id="c3" name="tab">
+<label for="c3">ContactUs</label>
+<input type="radio" id="c4" name="tab">
+<label for="c4">Services</label>
+<div id="content1">
+	<h1 class="fadeInRight animated">Home</h1>
+</div>
+<div id="content2">
+	<h1 class="fadeInRight animated">About</h1>
+</div>
+<div id="content3">
+	<h1 class="bounce animated">ContactUs</h1>
+</div>
+<div id="content4">
+	<h1 class="bounce animated">Services</h1>
+</div>
+</div>
+</body>
+</html>

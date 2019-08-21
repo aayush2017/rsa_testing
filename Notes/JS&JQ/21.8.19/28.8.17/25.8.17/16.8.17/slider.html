@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@keyframes slide {
+	0% {
+		margin-top: 2%;
+	}
+	25% {
+		margin-top: 50%;
+	}
+}
+#slider {
+	width: 400px;
+	height: 230px;
+	overflow: hidden;
+}
+.box {
+	width: 100%;
+	/*float: left;*/
+}
+#slider div {
+	animation: slide 5s;
+}
+.img-res {
+	width: 100%;
+}
+</style>
+</head>
+<body>
+<div id="slider">
+	<div class="box">
+		<img src="130/img/Aston-Martin.jpg" class="img-res">
+	</div>
+	<div class="box">
+		<img src="130/img/ferrari_supercar_sports_car_red_mountains_101239_1920x1080.jpg" class="img-res">
+	</div>
+	<div class="box">
+		<img src="130/img/lamborghini_veneno_supercar_rear_view_nature_95601_1920x1080.jpg" class="img-res">
+	</div>
+</div>
+</body>
+</html>

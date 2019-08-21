@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab2</title>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+<style>
+#ca1, #cw2, #cg3, #all, #website, #graphics {
+	display: none;
+}
+#ca1:checked ~ #all, #cw2:checked ~ #website, #cg3:checked ~ #graphics{
+	display: block;
+}
+.btn {
+	padding: 1%;
+	display: inline-block;
+}
+.active {
+	background: red;
+	color: #fff;
+}
+.btn:hover:not(.active) {
+	background: blue;
+	color: #fff;
+}
+
+</style>
+</head>
+<body>
+<div class="portfolio">
+	<input type="radio" name="tabs" id="ca1" checked="">
+	<input type="radio" name="tabs" id="cw2">
+	<input type="radio" name="tabs" id="cg3">
+	<label for="ca1" class="btn active">All</label>
+	<label for="cw2" class="btn">Website</label>
+	<label for="cg3" class="btn">Graphics</label>
+	<div id="all" class="fadeIn animated">
+		<h1 class="bounce animated">All</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div id="website" class="fadeIn animated">
+		<h1>Website</h1>
+	</div>
+	<div id="graphics" class="fadeIn animated">
+		<h1>Graphics</h1>
+	</div>
+</div>
+</body>
+</html>

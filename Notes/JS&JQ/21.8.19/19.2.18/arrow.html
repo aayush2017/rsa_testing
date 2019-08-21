@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow</title>
+<style>
+body {
+	background: #000;
+}
+.bottomIcon {
+	position: absolute;
+	bottom: 40px;
+	text-align: center;
+	width: 100%;
+	z-index: 99;
+}
+.bottomIcon img {
+	transition: All 1s ease;
+	-webkit-transition: All 1s ease;
+	-moz-transition: All 1s ease;
+	-o-transition: All 1s ease;
+	transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	-webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	-moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	-o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+	-ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+}
+.bounce {
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px); } 
+}
+.bottomIcon img:hover {
+	transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+	-webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+	-moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+	-o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+	-ms-transform: rotate(360deg) scale(1) skew(1deg) translate(0px);
+}
+</style>
+</head>
+<body>
+<div class="bottomIcon bottomIcon1 bounce"><a href="#k"><img src="http://bassntreble.com/wp-content/themes/bass/images/darrows.png" alt="icon1" draggable="false"></a></div>
+</body>
+</html>

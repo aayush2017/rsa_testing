@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.box-img {
+	width: 16%;
+	float: left;
+	position: relative;
+	left: 0%;
+}
+.box-img img { width: 100%; }
+.box {overflow: hidden;}
+.box-content {width: 209%; position: relative; left: 0%; transition: all 3s;}
+.gt {position: absolute;top: 15%;right: 0;padding: 10px;font-size: 3em;border-radius: 20%;}
+.lt {position: absolute;top: 15%;left: 0;padding: 10px;font-size: 3em;border-radius: 20%;}
+</style>
+</head>
+<body>
+<div class="box">
+	<div class="box-content">
+		<div class="box-img">
+			<img src="img/1.jpg" alt="1.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/2.jpg" alt="2.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/4.jpg" alt="4.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/5.jpg" alt="5.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/6.jpg" alt="6.jpg" />
+		</div>
+		<div class="box-img">
+			<img src="img/7.jpg" alt="7.jpg" />
+		</div>
+	</div>
+</div>
+<button onclick="imgNum = prevSlide(imgNum -1);" id="prev" class="lt">&lt;</button>
+<button onclick="imgNum = nextSlide(imgNum +1);" id="next" class="gt">&gt;</button>
+<script>
+
+var imgNum = 0;
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+prev.style = "display: none;";
+
+function nextSlide(imgNum) {
+	var box_content = document.getElementsByClassName("box-content");
+	var box_img = document.getElementsByClassName("box-img");
+	if (imgNum <= box_img.length - 3) {
+ 	box_content[0].style = "left: -" + 33*imgNum + "%";
+	 	if (box_img.length - 3 == imgNum) {
+	 		prev.style = "display: block;";
+	 		next.style = "display: none;";
+	 	}
+	}
+	return imgNum;
+}
+function prevSlide(imgNum) {
+	var box_content = document.getElementsByClassName("box-content");
+	var box_img = document.getElementsByClassName("box-img");
+	if (imgNum >= 0) {
+ 	box_content[0].style = "left: -" + 33*imgNum + "%";
+ 		if (imgNum == 0) {
+	 		prev.style = "display: none;";
+	 		next.style = "display: block;";
+	 	}
+	}
+	return imgNum;
+}
+</script>
+</body>
+</html>

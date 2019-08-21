@@ -1,0 +1,140 @@
+* { box-sizing: border-box; font-family: 'Blackadder ITC'; transition: all .3s linear; }
+		body {
+			margin: 0;
+			padding: 0;
+			background: url(../img/Aston-Martin.jpg) no-repeat center fixed;
+			background-size: cover;
+		}
+		header { height: 350px; }
+		.box {
+			width: 200px;
+			float: left;
+			margin-right: 35px;
+			margin-bottom: 20px;
+		}
+		#gallery {
+			background-color: #ffffffb3;
+			overflow: auto;
+			padding: 40px 0px 40px 81px;
+		}
+		header #logo {
+			float: left;
+		}
+		header .menu ul {
+			float: right;
+		}
+		header #logo, nav a{
+			color: #fff;
+		}
+		.menu ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.menu a {
+			text-decoration: none;
+			padding: 15px;
+		}
+		.menu ul li {
+			display: inline-block;
+		}
+		.menu ul li:hover a {
+			background-color: green;
+			color: #fff;
+		}
+		.clearfix { clear: both; }
+		.flt_left { float: left; }
+		.flt_right { float: right; }
+		.row {
+			width: 100%;
+		}
+		.150px { width: 150px; display: inline-block; }
+		.form-control {
+		  display: block;
+		  width: 100%;
+		  height: 34px;
+		  padding: 6px 12px;
+		  font-size: 14px;
+		  line-height: 1.42857143;
+		  color: #555;
+		  background-color: #fff;
+		  background-image: none;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+		       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		}
+		.form-control:focus {
+		  border-color: #66afe9;
+		  outline: 0;
+		  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+		          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+		}
+		.form-control::-moz-placeholder {
+		  color: #999;
+		  opacity: 1;
+		}
+		.btn {
+			  display: inline-block;
+			  padding: 6px 12px;
+			  margin-bottom: 0;
+			  font-size: 14px;
+			  font-weight: normal;
+			  line-height: 1.42857143;
+			  text-align: center;
+			  white-space: nowrap;
+			  vertical-align: middle;
+			  -ms-touch-action: manipulation;
+			      touch-action: manipulation;
+			  cursor: pointer;
+			  -webkit-user-select: none;
+			     -moz-user-select: none;
+			      -ms-user-select: none;
+			          user-select: none;
+			  background-image: none;
+			  border: 1px solid transparent;
+			  border-radius: 4px;
+			}
+			.btn:focus,
+			.btn:active:focus,
+			.btn.active:focus,
+			.btn.focus,
+			.btn:active.focus,
+			.btn.active.focus {
+			  outline: thin dotted;
+			  outline: 5px auto -webkit-focus-ring-color;
+			  outline-offset: -2px;
+			}
+			.btn:hover,
+			.btn:focus,
+			.btn.focus {
+			  color: #333;
+			  text-decoration: none;
+			}
+			.btn:active,
+			.btn.active {
+			  background-image: none;
+			  outline: 0;
+			  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+			          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+			}
+			.btn-primary {
+			  color: #fff;
+			  background-color: #337ab7;
+			  border-color: #2e6da4;
+			}
+			.btn-primary:focus,
+			.btn-primary.focus {
+			  color: #fff;
+			  background-color: #286090;
+			  border-color: #122b40;
+			}
+			.btn-primary:hover {
+			  color: #fff;
+			  background-color: #286090;
+			  border-color: #204d74;
+			}
+			.cart { background-color: #fff; padding: 5px; }

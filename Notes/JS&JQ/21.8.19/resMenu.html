@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Menu</title>
+<style>
+#mob-menu {
+	background: red;
+	position: absolute;
+	left: -60%;
+	top: 0;
+	width: 60%;
+	height: 100%;
+	overflow: hidden;
+	transition: all .3s;
+}
+#mob-menu a {
+  display: block;
+  padding: 2%;
+  text-decoration: none;
+  color: #000;
+}
+#mob-head { display: none; }
+#desk-menu {
+
+}
+@media only screen and (max-width: 460px) {
+	#desk-menu { display: none; }
+	#mob-head { display: block; }
+}
+#mmc:checked ~ #mob-menu {
+	left: 0%;
+}
+</style>
+</head>
+<body>
+<div id="desk-menu">
+	<h1>Desktop Menu</h1>
+</div>
+<input type="checkbox" name="" id="mmc">
+<div id="mob-menu">
+	<a href="">Home</a>
+	<a href="">About</a>
+	<a href="">Contact</a>
+	<label for="mmc">Close</label>
+</div>
+<div id="mob-head">
+	<label for="mmc"><i>Icon</i></label><h1>Mobile Menu</h1>
+</div>
+<!-- 
+1. Tab CSS convert JS/JQ 
+2. ResMenu CSS convert JS/JQ 
+3. Fix Nav JQ Menu ActiveColor
+4. Portfolio Layout Illustrator 
+ -->
+</body>
+</html>

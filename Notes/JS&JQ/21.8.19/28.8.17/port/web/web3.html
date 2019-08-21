@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.span4 {
+	width: 33.333333%;
+}
+.portfolio-item {
+	margin-bottom: 85px;
+}
+div {
+	border-style: solid;
+}
+.portfolio-img {
+	overflow: hidden;
+	height: 0;
+	width: 100%;
+	padding-top: 136%;
+	position: relative;
+}
+.project-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	line-height: 1em;
+	color: #ffffff;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 29px;
+}
+.portfolio-img .hover-overlay {
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	right: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.75);
+	z-index: 9;
+	opacity: 0;
+	-webkit-transition: opacity cubic-bezier(.23,.81,.4,1) .4s;
+	-moz-transition: opacity cubic-bezier(.23,.81,.4,1) .4s;
+	transition: opacity cubic-bezier(.23,.81,.4,1) .4s;
+}
+.portfolio-img .hover-overlay .button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.button.spec-hover {
+	overflow: hidden;
+}
+.button {
+	border: 0;
+	padding: 0 45px;
+	color: #ffffff;
+	font-size: 10px;
+	line-height: 51px;
+	height: 51px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	background-color: #202020;
+	display: inline-block;
+	width: auto;
+	cursor: pointer;
+	position: relative;
+}
+.portfolio-img:hover .hover-overlay {
+	opacity: 1;
+	top: 0;
+	bottom: 0;
+}
+.portfolio-img.short-img:hover img {
+	-webkit-transition: all 1.5s linear;
+	-moz-transition: all 1.5s linear;
+	transition: all 1.5s linear;
+}
+.portfolio-img:hover img {
+	transform: translateY(-100%);
+	top: 100%;
+	-webkit-transition: all 3s linear;
+	-moz-transition: all 3s linear;
+	transition: all 3s linear;
+}
+.portfolio-img img {
+	width: 100%;
+}
+.portfolio-img img {
+	position: absolute;
+	top: 0%;
+	display: block;
+	width: 100%;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	transition: all 1s linear;
+	z-index: 1;
+}
+img {
+	max-width: 100%;
+	width: auto 9;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+</style>
+</head>
+<body>
+<div class="span4">
+	<div class="portfolio-item" data-scrolled-into-view="true">
+		<figure class="portfolio-img short-img">
+			<div class="hover-overlay">
+				<a href="http://wythe.artstudioworks.net/project-details-4.html" class="button spec-hover"><span>View</span></a>
+			</div>
+			<img src="portfolio4.jpg" alt="portfolio4" style="width: 100%;">
+		</figure>
+		<h3 class="project-title">Project Layout 4</h3>
+	</div>
+</div>
+</body>
+</html>

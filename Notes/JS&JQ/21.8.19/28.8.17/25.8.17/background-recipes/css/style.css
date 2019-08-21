@@ -1,0 +1,158 @@
+body {
+  font-family: Avenir Next;
+  text-align: center;
+  min-width: 300px;
+}
+
+ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: -webkit-transform 200ms linear;
+  transition: -webkit-transform 200ms linear;
+  transition: transform 200ms linear;
+  transition: transform 200ms linear, -webkit-transform 200ms linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+ul.left-selected {
+  -webkit-transform: translateX(19.8%);
+          transform: translateX(19.8%);
+}
+ul.right-selected {
+  -webkit-transform: translateX(-19.8%);
+          transform: translateX(-19.8%);
+}
+
+.options__first {
+  font-size: 1.1em;
+}
+.options__first li {
+  color: white;
+  height: 125px;
+  width: 125px;
+  margin: 8px 16px;
+  background: #0081B6;
+  cursor: pointer;
+  line-height: 125px;
+}
+.options__first .option__image {
+  background: url("https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176");
+  background-size: cover;
+}
+.options__first .option__gradient {
+  background-image: -webkit-linear-gradient(#002e4b, #0081b6);
+  background-image: linear-gradient(#002e4b, #0081b6);
+}
+.options__first .option__radial {
+  background-image: -webkit-radial-gradient(80% 40%, #002e4b, #0081b6);
+  background-image: radial-gradient(80% 40%, #002e4b, #0081b6);
+}
+.options__first .option__striped {
+  background: -webkit-linear-gradient(#002e4b 55%, #0081b6 55%);
+  background: linear-gradient(#002e4b 55%, #0081b6 55%);
+}
+.options__first .option__positioned {
+  background-position: top right;
+}
+.options__first .option__repeating {
+  background: -webkit-linear-gradient(#002e4b 50%, #0081b6 50%);
+  background: linear-gradient(#002e4b 50%, #0081b6 50%);
+  background-size: 100% 50px;
+  background-position: 0 35px;
+}
+.options__first .option__sprite {
+  background: none;
+  color: #0081B6;
+  line-height: 110px;
+}
+.options__first .option__sprite:after {
+  content: '';
+  height: 50px;
+  width: 50px;
+  background: url("https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176");
+  background-size: 200px auto;
+  background-position: 30% 40%;
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  left: 27.4%;
+  z-index: -1;
+}
+.options__first .image__repeating {
+  background-size: auto 32%;
+}
+.options__first .option__multiple {
+  background: url("https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?q=75&fm=jpg&s=07faf9fb6409579bda59881970b284d1"), url("https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176");
+  background-size: 210%, 200%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 145% 0, 0 0;
+}
+.options__first .image__opacity {
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+.options__first .image__opacity:after {
+  content: '';
+  background: url("https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  opacity: 0.5;
+  z-index: -1;
+}
+.options__first .option__name {
+  background: rebeccapurple;
+}
+.options__first .option__opacity {
+  background: rgba(0, 129, 182, 0.7);
+}
+
+.options__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 32px 0;
+  width: 500%;
+  left: -200%;
+  max-width: 1000px;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  opacity: 0;
+}
+
+pre {
+  text-align: left;
+  background: #333538;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #111 inset;
+  margin-top: 200px;
+  color: white;
+  font-size: 2em;
+  overflow-x: auto;
+  -webkit-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+}
+
+.debug {
+  margin-top: -8px;
+}

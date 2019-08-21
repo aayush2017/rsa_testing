@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web2</title>
+<style>
+a.default.link {
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+	display: block;
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.image-bg {
+	display: block;
+	height: 350px;
+	position: relative;
+	width: 100%;
+}
+.image-bg .image-shop-scroll {
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 350px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 0px;
+	transition: all 4s ease-out 0s;
+	width: 100%;
+}
+.image-bg:hover .image-shop-scroll {
+	background-position: center 100% !important;
+}
+.btn-tran-yellow {
+	padding: 10px;
+	width: 25%;
+	background-color: transparent;
+	border: 1px solid yellow;
+	font-size: 15px;
+}
+.btn-tran-yellow:hover {
+	background-color: yellow;
+	border: 1px solid transparent;
+}
+.web-box {
+	width: 33.33333333%;
+	box-shadow: 0px 40px 20px -40px rgb(133, 133, 133);
+	-webkit-box-shadow: 0px 40px 20px -40px rgb(133, 133, 133);
+	-moz-box-shadow: 0px 40px 20px -40px rgb(133, 133, 133);
+	-o-box-shadow: 0px 40px 20px -40px rgb(133, 133, 133);
+	padding-bottom: 1%;
+}
+</style>
+</head>
+<body>
+<div class="web-box">
+	<a href="onin/index.html" class="default link" target="_blank">
+		<span class="image-bg">
+			<span style="background-image: url('h-1.jpg');" class="image-shop-scroll"></span>
+		</span>
+	</a>
+	<h2 style="text-align: center;">Theam Name</h2>
+	<p style="text-align: center;"><a href="" style="text-decoration: none;"><input type="button" value="LAUNCH" class="btn-tran-yellow"></a></p>
+</div>
+</body>
+</html>
