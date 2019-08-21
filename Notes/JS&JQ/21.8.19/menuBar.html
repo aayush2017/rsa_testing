@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Menu</title>
+<style>
+#menu {
+	background: red;
+	overflow: hidden;
+	padding: 1% 2%;
+	/*position: fixed;*/
+	width: 96%;
+	left: 0;
+	top: 0;
+	transition: all .3s;
+}
+@keyframes sh {
+	from {height: 10px;}
+	to {height: 30px;}
+}
+.fixnav {
+	position: fixed;
+	animation: sh 1s;
+	height: 30px;
+}
+#menu a {
+
+}
+</style>
+</head>
+<body>
+<div id="menu">
+	<div style="float: left;">Logo</div>
+	<nav style="float: right;">
+		<a href="">Home</a>
+		<a href="">About</a>
+		<a href="">Contact</a>
+	</nav>
+</div>
+<img src="img/1.jpg" alt="1" style="width: 100%;">	
+<img src="img/2.jpg" alt="2" style="width: 100%;">	
+<img src="img/3.jpg" alt="3" style="width: 100%;">	
+<img src="img/7.jpg" alt="7" style="width: 100%;">	
+
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$(window).scroll(function() {
+		// alert($(this).scrollTop());
+		if ($(this).scrollTop() >= 100) {
+			$("#menu").addClass("fixnav");
+			// $("#menu").toggleClass("fixnav");
+		} else {
+			$("#menu").removeClass("fixnav");
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Menu</title>
+<style>
+#menu {
+	background: red;
+	overflow: hidden;
+	padding: 1% 2%;
+	/*position: fixed;*/
+	width: 96%;
+	left: 0;
+	top: 0;
+	transition: all .3s;
+}
+@keyframes sh {
+	from {height: 10px;}
+	to {height: 30px;}
+}
+.fixnav {
+	position: fixed;
+	animation: sh 1s;
+	height: 30px;
+}
+#menu a {
+
+}
+</style>
+</head>
+<body>
+<div id="menu">
+	<div style="float: left;">Logo</div>
+	<nav style="float: right;">
+		<a href="#hm">Home</a>
+		<a href="#abt">About</a>
+		<a href="#cnt">Contact</a>
+	</nav>
+</div>
+<h1 id="hm">Home</h1>
+<img src="img/1.jpg" alt="1" style="width: 100%;">	
+<h1 id="abt">About</h1>
+<img src="img/2.jpg" alt="2" style="width: 100%;">	
+<h1 id="cnt">Contact</h1>
+<img src="img/3.jpg" alt="3" style="width: 100%;">	
+
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 100) {
+			$("#menu").addClass("fixnav");
+		} else {
+			$("#menu").removeClass("fixnav");
+		}
+	});
+	$("a[href^='#']").click(function(event) {
+		event.preventDefault();
+
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': 60
+        }, 500);
+	});
+});
+</script>
+</body>
+</html>

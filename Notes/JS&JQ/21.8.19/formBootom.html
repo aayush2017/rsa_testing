@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Bottom</title>
+<style>
+#box {
+	background: red;
+	width: 25%;
+	position: fixed;
+	bottom: -30%;
+	right: 2%;
+	cursor: pointer;
+	transition: all .3s;
+}
+.sc {
+	bottom: 0% !important;
+}
+#box-title {
+	padding: 2% 5%;
+}
+#contact-form {
+
+}
+</style>
+</head>
+<body>
+<div id="box">
+	<div id="box-title">
+		Contact US
+	</div>
+	<div id="contact-form">
+<pre>
+<label>Fullname <input type="text" name=""></label>
+
+<label>Username <input type="text" name=""></label>
+
+<label>Password <input type="password" name=""></label>
+
+<label>Mobile   <input type="tel" name="" size="10" maxlength="10"></label>
+
+<label>Email ID <input type="email" name=""></label>
+</pre>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#box").click(function() {
+		$(this).toggleClass("sc");
+	});
+});
+</script>
+</body>
+</html>
